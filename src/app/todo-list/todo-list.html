@@ -1,0 +1,17 @@
+@for (todo of todos(); track todo.id) {
+
+  <div>
+
+    <span>
+      {{ todo.title }}
+    </span>
+
+    @if (todo.completed) {
+      <span> ✓ Completed</span>
+    }
+
+    @if (!todo.completed) {
+      <span> - Active</span>
+    }
+  </div>
+}

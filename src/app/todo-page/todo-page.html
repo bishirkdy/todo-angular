@@ -1,0 +1,10 @@
+<h1>Todo App</h1>
+<app-todo-form
+  (todoAdded)="addTodo($event)"
+></app-todo-form>
+
+<hr>
+
+<app-todo-list
+  [todos]="todos"
+></app-todo-list>
